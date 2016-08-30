@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    color: white;
+}
+#body {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.centered {
+    text-align: center;
+    margin: 0 auto;
+}
