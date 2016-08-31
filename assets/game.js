@@ -19,16 +19,16 @@ $(document).ready(function(){
         "Clubs",
     ];
     var advanceMove = function(){
-        if(move == 13){
+        if(move >= 13){
             $('.suit').html("Total");
             $('.number-of-cards').html("Scores");
+            $('.next').html("");  
             return;
         }
-        $(".suit").html(gameData[move]);
         var plural = cards == 1 ? " card" : " cards";
+        $(".suit").html(gameData[move]);
         $(".number-of-cards").html(cards + plural);
         if(lessCards){
-
             $('.next').html('Next: ' + gameData[move + 1] + " " + (cards - 1));
             cards--;
         } else {
