@@ -4,19 +4,19 @@ $(document).ready(function(){
     var cards = 7;
     var lessCards = true;
     var gameData = [
-        "First",
+        "Hearts",
+        "Spades",
         "Clubs",
+        "Diamonds",
+        "None",
+        "Hearts",
+        "Spades",
         "Clubs",
+        "Diamonds",
+        "None",
+        "Hearts",
+        "Spades",
         "Clubs",
-        "Clubs",
-        "Clubs",
-        "Clubs",
-        "Clubs",
-        "Clubs",
-        "Clubs",
-        "Clubs",
-        "Clubs",
-        "Last",
     ];
     var advanceMove = function(){
         if(move == 13){
