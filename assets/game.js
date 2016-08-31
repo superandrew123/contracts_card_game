@@ -51,15 +51,16 @@ $(document).ready(function(){
         $(".suit").html(html);
         $(".suit").css("color", color);
         $(".number-of-cards").html(cards + plural);
+        
         if(lessCards){
-            nextText = 'Next: ' + gameData[move + 1].charAt(0).toUpperCase() + gameData[move + 1].slice(1); + " " + (cards - 1);
+            nextText = 'Next: ' + (gameData[move + 1].charAt(0).toUpperCase() + gameData[move + 1].slice(1)) + " " + (cards - 1);
             $('.next').html(nextText);
             cards--;
         } else {
-            nextText = 'Next: ' + gameData[move + 1].charAt(0).toUpperCase() + gameData[move + 1].slice(1); + " " + (cards + 1)
             if(move == 12){
                 $('.next').html("Last Round");    
             } else {
+                nextText = 'Next: ' + (gameData[move + 1].charAt(0).toUpperCase() + gameData[move + 1].slice(1)) + " " + (cards + 1)
                 $('.next').html(nextText);
             }
             cards++;
